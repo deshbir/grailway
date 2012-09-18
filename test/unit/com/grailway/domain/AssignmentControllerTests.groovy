@@ -1,11 +1,6 @@
 package com.grailway.domain
 
 
-
-import grails.test.mixin.*
-
-import org.junit.*
-
 import com.grailway.AssignmentController
 
 @TestFor(AssignmentController)
