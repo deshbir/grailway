@@ -7,7 +7,7 @@ class UrlMappings {
 		//Index page mapping
 		"/$skin/$workflow/"(controller:"main", action:"index")		
 		
-		"/$skin/$workflow/$controller/$action/$id?"{
+		"/$skin/$workflow/$controller/$action?/$id?"{
 			constraints {
 				// apply constraints here
 			}
