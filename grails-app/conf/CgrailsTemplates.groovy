@@ -1,9 +1,9 @@
 cgrails {
 		templates = [
-		'home/home',
-		'course/addCourseForm',
-		'course/courseContainer',
-		'course/courseItem'
+		'templates/home/home',
+		'templates/course/addCourseForm',
+		'templates/course/courseContainer',
+		'templates/course/courseItem'
 	]
 }		
 
