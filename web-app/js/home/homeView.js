@@ -31,7 +31,7 @@ HomeView = new function() {
 		if (router == null) {
 			router = new Router();
 		}
-		TemplateManager.get('home/home', function(template){
+		TemplateManager.get('home/homeContainer', function(template){
 			UserModel.get().fetch({
 			    success: function(model, response){
 			    	var compiledTemplate = Mustache.render(template,UserModel.get().toJSON());

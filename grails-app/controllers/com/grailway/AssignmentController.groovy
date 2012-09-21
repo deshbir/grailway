@@ -10,7 +10,7 @@ import com.grailway.domain.Assignment
 class AssignmentController {
 	
 	def index = {
-		render ""
+		render (view:"/assignment", model:[:])
 	}
 
     def save = {

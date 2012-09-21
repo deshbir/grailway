@@ -24,15 +24,15 @@
 		        <div class="span12">	
 					<h3>Single Page</h3>
 					<ul>	
-							<li><a href="default/singlepage/main/login">Default skin</a></li>
-							<li><a href="skin1/singlepage/main/login">Skin 1</a></li>
-							<li><a href="skin2/singlepage/main/login">Skin 2</a></li>
+							<li><a href="default/singlepage/accounts/login">Default skin</a></li>
+							<li><a href="skin1/singlepage/accounts/login">Skin 1</a></li>
+							<li><a href="skin2/singlepage/accounts/login">Skin 2</a></li>
 					</ul>
 					<h3>Traditional</h3>
 					<ul>	
-							<li><a href="default/traditional/main/login">Default skin</a></li>
-							<li><a href="skin1/traditional/main/login">Skin 1</a></li>
-							<li><a href="skin2/traditional/main/login">Skin 2</a></li>
+							<li><a href="default/traditional/accounts/login">Default skin</a></li>
+							<li><a href="skin1/traditional/accounts/login">Skin 1</a></li>
+							<li><a href="skin2/traditional/accounts/login">Skin 2</a></li>
 					</ul>
 				</div>
 			</div>	

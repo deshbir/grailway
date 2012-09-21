@@ -10,7 +10,7 @@ import com.grailway.domain.Course
 class CourseController {
 
 	def index = {
-		render ""
+		render (view:"/course", model:[:])
 	}
 	
     def save = {

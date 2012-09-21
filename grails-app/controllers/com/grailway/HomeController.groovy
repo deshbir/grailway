@@ -3,6 +3,6 @@ package com.grailway
 class HomeController {
 	
 	def index = {
-		render ""
+		render (view:"/home", model:[:])
 	}   
 }
