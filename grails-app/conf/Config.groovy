@@ -93,27 +93,3 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
-
-
-
-/*******************************
- * Cgrails Configuration
- *******************************/
-cgrails {
-	skinning {
-		baseskin = "default"
-		skins {
-			skin1 { parent = "default" }
-			skin2 { parent = "default" }
-		}		
-	}
-	less {
-		//Array of Less Files to compile.
-		files = ["styles"]
-	}
-	templates {
-		url = "/main/template/"
-		useConfiguration = false
-	}
-	javascriptMVC = "backbone"
-}
