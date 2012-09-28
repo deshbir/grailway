@@ -17,5 +17,3 @@
 <r:script type="text/javascript" disposition="defer">	
 	Util.configureAJAX();
 </r:script>
-<g:layoutHead/>
-<r:layoutResources/>	

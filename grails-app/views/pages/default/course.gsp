@@ -1,6 +1,6 @@
 <html>
     <head>
-        <meta name="layout" content="singlepage_layout" />
+        <meta name="layout" content="course_layout" />
     </head>
     <body>
     	<r:script type="text/javascript">

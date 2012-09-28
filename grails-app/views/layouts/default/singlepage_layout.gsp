@@ -1,14 +1,19 @@
-<%@ page import="com.grailway.utils.Util" %>
-<%@ page import="com.grailway.Constants" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 	<head>
-	    <r:require modules="libs,home,assignments,courses"/>	
+	    <r:require modules="cgrailsLibs,libs,home,assignments,courses"/>	
 		<g:include view="layout-helpers/head_layout_main.gsp"/>	
+		<g:layoutHead/>
+		<r:layoutResources/>	
 	</head>
 	<body>	
-		<g:include view="layout-helpers/body_layout_main.gsp"/>
+		<g:include view="layout-helpers/header_main.gsp"/>			
+		<div id="main_container" class="container">
+			<g:layoutBody/>
+		</div>
+		<g:include view="layout-helpers/footer_main.gsp"/>
+		<r:layoutResources/>
 	</body>
 </html>
 
