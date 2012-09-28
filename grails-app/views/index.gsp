@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Grailway (A Demo Application)</title>
-		<cgrails:stylesheet src="styles" rtlsupport="true"/>
+		<cgrails:stylesheet src="styles"/>
 	</head>
 	<body>	
 		<div id="hero" class="container hero">
