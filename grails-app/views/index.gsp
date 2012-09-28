@@ -1,9 +1,8 @@
-<%@ page import="com.grailway.utils.Util" %>
 <!Doctype html>
 <html>
 	<head>
 		<title>Grailway (A Demo Application)</title>
-		<cgrails:stylesheet src="styles" watch="false"/>
+		<cgrails:stylesheet src="styles" rtlsupport="true"/>
 	</head>
 	<body>	
 		<div id="hero" class="container hero">
@@ -36,5 +35,6 @@
 					</ul>
 				</div>
 			</div>	
+		</div>
 	</body>
 </html>
