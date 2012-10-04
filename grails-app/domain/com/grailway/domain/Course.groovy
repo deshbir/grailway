@@ -4,6 +4,10 @@ import grails.converters.JSON
 
 class Course {
 	
+	static String backboneType = "collection"
+	
+	static String backboneObject = "CoursesCollection"
+	
 	String name	
 
     static constraints = {

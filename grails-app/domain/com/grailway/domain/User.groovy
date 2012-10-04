@@ -3,6 +3,10 @@ package com.grailway.domain
 import grails.converters.JSON
 
 class User {
+	
+	static String backboneType = "model"
+	
+	static String backboneObject = "UserModel"
 
 	String username
 	String password

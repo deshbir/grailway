@@ -2,7 +2,11 @@ package com.grailway.domain
 
 import grails.converters.JSON
 
-class Assignment {
+class Assignment {	
+	
+	static String backboneType = "collection"
+	
+	static String backboneObject = "AssignmentsCollection"
 	
 	String name
 
