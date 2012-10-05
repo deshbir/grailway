@@ -2,22 +2,24 @@ package com.grailway.domain
 
 import grails.converters.JSON
 
-class User {
-	
-	static String backboneType = "model"
-	
-	static String backboneObject = "UserModel"
+class User {	
 
 	String username
 	String password
 	
-	static constraints = {
-	}
+	/***********************************
+	 * START Offline configurations
+	 ***********************************/
 	
-	def static JSON initialData() {
+	
+	static JSON initialData() {
 		User user = new User()
 		user.username = "student1"
 		user.password = "student1"
 		return [ username: user.username, password : user.password ]  as JSON
 	}
+	
+	/******************************
+	 * END Offline configurations
+	 *******************************/
 }
