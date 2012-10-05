@@ -22,7 +22,4 @@ class MainController {
 		render ""
 	}
 	
-	def template() {
-		render (view:"/"+ params.path,model:[:])
-	}
 }
