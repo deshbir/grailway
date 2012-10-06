@@ -10,15 +10,4 @@ cgrails {
 		//Array of Less Files to compile.
 		files = ["styles"]
 	}
-	templates {
-		url = "/main/template/"
-		useConfiguration = false
-	}
-	javascriptMVC = "backbone"
-	templateList = [
-	'templates/home/home',
-	'templates/course/addCourseForm',
-	'templates/course/courseContainer',
-	'templates/course/courseItem'
-	]
 }	
