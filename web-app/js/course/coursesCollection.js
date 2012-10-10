@@ -11,9 +11,9 @@ CoursesCollection = new function() {
 	  });
 
  	  this.get = function(){
-			if (this.collection == null) {
-				this.collection = new Collection();
+			if (collection == null) {
+				collection = new Collection();
 			}
-			return this.collection;
+			return collection;
 	  };
 };

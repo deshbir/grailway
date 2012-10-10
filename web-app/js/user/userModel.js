@@ -7,10 +7,10 @@ UserModel = new function() {
 				});
 	
 	this.get = function(){
-		if (this.modelObj == null) {
-			this.modelObj = new Model();
+		if (modelObj == null) {
+			modelObj = new Model();
 		}
-		return this.modelObj;
+		return modelObj;
     };
 	
 	
