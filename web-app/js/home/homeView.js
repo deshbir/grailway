@@ -14,15 +14,11 @@ HomeView = new function() {
 	    	var username = $("#username").val(); 
 	    	var password = $("#password").val();
 	 		$.ajax({
-		    	url: "/" + com.compro.cgrails.APPLICATIONNAME + "/" + com.compro.cgrails.SKIN + "/" + com.compro.cgrails.WORKFLOW + "/main/login",
+		    	url: "/" + com.compro.cgrails.APPLICATIONNAME + "/" + com.compro.cgrails.SKIN + "/main/login",
 		    	type: "POST",
 		    	data:{ username: username, password: password },
 		        success: function() {
-		        	if(com.compro.cgrails.WORKFLOW == "singlepage") {
-		        		router.navigate("#/courses/list", {trigger:true,replace:true});	
-		        	} else {
-		        		window.location.href = "/" + com.compro.cgrails.APPLICATIONNAME + "/" + com.compro.cgrails.SKIN + "/"+ com.compro.cgrails.WORKFLOW + "/courses/";
-		        	}
+		        	window.location.href = "/" + com.compro.cgrails.APPLICATIONNAME + "/" + com.compro.cgrails.SKIN + "/courses/";
 		        }
 		    });
 	    }

@@ -3,7 +3,7 @@ UserModel = new function() {
 	var modelObj = null;
 	
 	var Model = Backbone.Model.extend({
-					url: "/" + com.compro.cgrails.APPLICATIONNAME + "/api/user"
+					urlRoot: "/" + com.compro.cgrails.APPLICATIONNAME + "/api/user"
 				});
 	
 	this.get = function(){

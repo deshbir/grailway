@@ -10,9 +10,7 @@ class Course {
 	 * START Offline configurations
 	 ***********************************/
 	
-	static String backboneType = "collection"
-	
-	static String backboneObject = "CoursesCollection"
+	static String dataAPI = "/api/course"
 	
 	static JSON initialData() {
 		List<Course> courseList = new ArrayList<Course>()

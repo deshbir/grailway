@@ -5,9 +5,9 @@ class UrlMappings {
 	static mappings = {
 		
 		//Index page mapping
-		"/$skin/$workflow/"(controller:"main")		
+		"/$skin/"(controller:"main")		
 		
-		"/$skin/$workflow/$controller/$action?/$id?"{
+		"/$skin/$controller/$action?/$id?"{
 			constraints {
 				// apply constraints here
 			}

@@ -16,8 +16,7 @@ class AccountsController {
 		def password = params.password
 		User user = new User(username:username, password:password)
 		session["user"]= user
-		redirect (uri:"/" + CgrailsUtils.getSkin() + "/"
-						+ CgrailsUtils.getWorkflow() + "/")
+		redirect (uri:"/" + CgrailsUtils.getSkin() + "/")
 		return
 	}
 	
@@ -26,8 +25,7 @@ class AccountsController {
 		if(session.user) {
 			session.user = null
 		}
-		redirect (uri:"/" + CgrailsUtils.getSkin() + "/"
-						+ CgrailsUtils.getWorkflow() + "/accounts/login")
+		redirect (uri:"/" + CgrailsUtils.getSkin() + "/accounts/login")
 		return
 	}
 

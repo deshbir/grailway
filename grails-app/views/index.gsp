@@ -21,17 +21,11 @@
 			</div>
 			<div class="row secondrow">
 		        <div class="span12">	
-					<h3>Single Page</h3>
+					<h3>Skins</h3>
 					<ul>	
-							<li><a href="default/singlepage/accounts/login">Default skin</a></li>
-							<li><a href="skin1/singlepage/accounts/login">Skin 1</a></li>
-							<li><a href="skin2/singlepage/accounts/login">Skin 2</a></li>
-					</ul>
-					<h3>Traditional</h3>
-					<ul>	
-							<li><a href="default/traditional/accounts/login">Default skin</a></li>
-							<li><a href="skin1/traditional/accounts/login">Skin 1</a></li>
-							<li><a href="skin2/traditional/accounts/login">Skin 2</a></li>
+						<li><a href="default/accounts/login">Default skin</a></li>
+						<li><a href="skin1/accounts/login">Skin 1</a></li>
+						<li><a href="skin2/accounts/login">Skin 2</a></li>
 					</ul>
 				</div>
 			</div>	

@@ -9,9 +9,6 @@ import com.grailway.domain.Course
 
 class CourseController {
 
-	def index = {
-		render (view:"/course", model:[:])
-	}
 	
     def save = {
 		def course = new Course(params)

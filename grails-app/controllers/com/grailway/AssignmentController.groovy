@@ -9,9 +9,6 @@ import com.grailway.domain.Assignment
 
 class AssignmentController {
 	
-	def index = {
-		render (view:"/assignment", model:[:])
-	}
 
     def save = {
 		def assignment = new Assignment(params)	

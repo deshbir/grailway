@@ -11,9 +11,7 @@ class User {
 	 * START Offline configurations
 	 ***********************************/
 	
-	static String backboneType = "model"
-	
-	static String backboneObject = "UserModel"
+	static String dataAPI = "/api/user"	
 	
 	static JSON initialData() {
 		User user = new User()

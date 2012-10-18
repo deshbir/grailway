@@ -10,9 +10,7 @@ class Assignment {
 	 * START Offline configurations
 	 ***********************************/
 	
-	static String backboneType = "collection"
-	
-	static String backboneObject = "AssignmentsCollection"
+	static String dataAPI = "/api/assignment"
 	
 	static JSON initialData() {
 		List<Assignment> assignmentList = new ArrayList<Assignment>()

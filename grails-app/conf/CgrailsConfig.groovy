@@ -7,9 +7,6 @@ cgrails {
 			skin2 { parent = "default" }
 		}
 	}
-	workflows {
-		defaultwokflow = "traditional"
-	}
 	less {
 		//Array of Less Files to compile.
 		files = ["styles"]
