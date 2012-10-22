@@ -81,6 +81,9 @@ log4j = {
 //        console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
 //    }
 //
+	
+	warn 'com.blockconsult.yuiminifyresources.YuiCompressorErrorReporter'
+	
     error  'org.codehaus.groovy.grails.web.servlet',  //  controllers
            'org.codehaus.groovy.grails.web.pages', //  GSP
            'org.codehaus.groovy.grails.web.sitemesh', //  layouts
