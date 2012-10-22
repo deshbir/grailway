@@ -1,9 +1,11 @@
 package com.grailway
 
 import grails.converters.JSON
+import groovy.json.JsonSlurper
 
 import org.hibernate.HibernateException
 
+import com.compro.cgrails.CgrailsUtils
 import com.grailway.domain.Course
 
 
@@ -23,7 +25,12 @@ class CourseController {
 	}
 		
 	def show = {
-		
+		if(CgrailsUtils.getWorkflow() == "offline") {
+			def slurper = new JsonSlurper()
+			def offlineCourses = slurper.parseText(Course.offlineJsonPayload)			
+			render offlineCourses.courses  as JSON
+			return
+		}
 		if(params.id) {
 			def course = Course.get(params.id)
 			if(course) {
@@ -37,6 +44,7 @@ class CourseController {
 		else {
 			def allCourses = Course.list()
 			render allCourses as JSON
+			return
 		}
 	}
 	

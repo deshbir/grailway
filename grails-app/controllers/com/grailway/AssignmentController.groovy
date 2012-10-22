@@ -1,10 +1,13 @@
 package com.grailway
 
 import grails.converters.JSON
+import groovy.json.JsonSlurper
 
 import org.hibernate.HibernateException
 
+import com.compro.cgrails.CgrailsUtils
 import com.grailway.domain.Assignment
+
 
 
 class AssignmentController {
@@ -22,7 +25,13 @@ class AssignmentController {
 		}
 	}
 		
-	def show = {	
+	def show = {
+		if(CgrailsUtils.getWorkflow() == "offline") {
+			def slurper = new JsonSlurper()
+			def offlineAssignments = slurper.parseText(Assignment.offlineJsonPayload)			
+			render offlineAssignments.assignments  as JSON
+			return
+		}		
 		if(params.id) {
 			def assignment = Assignment.get(params.id)
 			if(assignment) {

@@ -1,0 +1,10 @@
+{
+    "courses": [
+        {
+        	"name": "English Course"
+        },
+        {
+        	"name": "Science Course"
+        }
+    ]    
+}

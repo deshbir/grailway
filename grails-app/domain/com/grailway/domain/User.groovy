@@ -3,6 +3,7 @@ package com.grailway.domain
 import grails.converters.JSON
 
 class User {	
+	def static offlineJsonPayload = new File("web-app/json/offline/user.json").text
 
 	String username
 	String password
@@ -11,13 +12,8 @@ class User {
 	 * START Offline configurations
 	 ***********************************/
 	
-	static String dataAPI = "/api/user"	
-	
-	static JSON initialData() {
-		User user = new User()
-		user.username = "student1"
-		user.password = "student1"
-		return [ username: user.username, password : user.password ]  as JSON
+	def static String[] offlineCachedUrls() {
+		return  ["/api/user/"];
 	}
 	
 	/******************************
