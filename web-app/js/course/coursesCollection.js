@@ -4,7 +4,7 @@ CoursesCollection = new function() {
 
 	  var Collection = Backbone.Collection.extend({
 		  	model: CoursesModel.get(),
-	  		url: "/" + com.compro.cgrails.APPLICATIONNAME + "/api/course/",
+	  		url: com.compro.cgrails.REQUEST_CONTEXT + "/api/course/",
 		    comparator: function(assignment) {
 		      return assignment.get('id');
 		    }

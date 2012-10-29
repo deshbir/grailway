@@ -1,7 +1,7 @@
 Util = new function() {
 	this.changeLocale = function(locale){
 		$.ajax({
-	    	url: "/" + com.compro.cgrails.APPLICATIONNAME + "/" + com.compro.cgrails.SKIN + "/main/changelocale?lang="+locale,
+	    	url: com.compro.cgrails.REQUEST_CONTEXT + "/" + com.compro.cgrails.SKIN + "/main/changelocale?lang="+locale,
 	        success: function(data) {
 				location.reload(true);
 	        }
