@@ -4,17 +4,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<r:require modules="cgrailsLibs,login"/>
+		<r:require modules="cgrailsLibs,libs,login"/>
 		<g:include view="layout-helpers/head_layout_main.gsp"/>	
 		<g:layoutHead/>
 		<r:layoutResources/>	
 	</head>
 	<body dir="${direction}">
-		<g:include view="layout-helpers/header_accounts.gsp"/>		
-		<div id="main_container" class="container">
+		<g:include view="layout-helpers/facebook_init.gsp"/>	
+		<div id="main_container" class="container">			
 			<g:layoutBody/>
 		</div>
-		<g:include view="layout-helpers/footer_main.gsp"/>
+		<g:include view="layout-helpers/footer_main.gsp"/>		
 		<r:layoutResources/>
 	</body>
 </html>

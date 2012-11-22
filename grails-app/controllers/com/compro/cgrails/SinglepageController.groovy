@@ -2,9 +2,8 @@ package com.compro.cgrails
 
 class SinglepageController {
 	
-	
 	def index() {
-		render (view:"/home", model:[:])
+		render (view:"/ajaxlogin", model:[:])
 	}	
 	
 	def assignment() {

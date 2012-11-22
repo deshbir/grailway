@@ -19,7 +19,6 @@
 				</div>
 				<div class="nav-collapse">
 					<ul class="nav pull-right">
-						<li class="menu"><a href="<cgrails:switch_singlepage action="index"/>"><g:message code="menu.home"/></a></li>
 						<li class="menu"><a href="<cgrails:switch_singlepage action="course"/>"><g:message code="menu.courses"/></a></li>
 						<li class="menu"><a href="<cgrails:switch_singlepage action="assignment"/>"><g:message code="menu.assignments"/></a></li>
 						<g:if test="${workflow != CgrailsConstants.WORKFLOW_OFFLINE}">

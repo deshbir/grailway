@@ -6,14 +6,9 @@ modules = {
 		resource url:'js/utils/util.js'
 	}
 	login {
-		dependsOn 'cgrailsLibs'
-		resource url:'js/libs/bootstrap.js'
-		resource url:'js/utils/util.js'
-	}
-	home {
-		dependsOn:'libs'
-		resource url:'js/home/homeView.js'
+		dependsOn 'libs'		
 		resource url:'js/user/userModel.js'
+		resource url:'js/authenticate/authenticate.js'
 	}
 	assignments {
 		dependsOn 'libs'
@@ -21,6 +16,7 @@ modules = {
 		resource url:'js/assignment/assignmentsCollection.js'
 		resource url:'js/assignment/assignmentsView.js'
 		resource url:'js/assignment/assignmentsAddView.js'
+		resource url:'js/authenticate/authenticate.js'
 	}
 	courses {
 		dependsOn 'libs'
@@ -28,5 +24,6 @@ modules = {
 		resource url:'js/course/coursesCollection.js'
 		resource url:'js/course/coursesView.js'
 		resource url:'js/course/coursesAddView.js'
+		resource url:'js/authenticate/authenticate.js'
 	}	
 }

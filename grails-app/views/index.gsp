@@ -23,12 +23,12 @@
 		        <div class="span12">	
 					<h3>Skins</h3>
 					<ul>	
-						<li><a href="default/accounts/login">Default skin</a></li>
-						<li><a href="skin1/accounts/login">Skin 1</a></li>
-						<li><a href="skin2/accounts/login">Skin 2</a></li>
+						<li><a href="default/">Default skin</a></li>
+						<li><a href="skin1/">Skin 1</a></li>
+						<li><a href="skin2/">Skin 2</a></li>
 					</ul>
 				</div>
-			</div>	
+			</div>
 		</div>
 	</body>
 </html>

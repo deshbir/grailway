@@ -20,5 +20,9 @@ cgrails {
 		   'course/courseItem'
 		]
 	}
+	offline {
+		username = 'comprotest'
+		password = 'compro'
+	}
 	javascriptMVC = "backbone"	
 }

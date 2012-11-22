@@ -64,6 +64,7 @@ environments {
     development {
         grails.logging.jul.usebridge = true
 		grails.resources.debug = true
+		grails.serverURL = "http://myapp.dev:8080/${appName}"
     }
     production {
         grails.logging.jul.usebridge = false
@@ -96,3 +97,25 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+// Added by the Spring Security Core plugin:
+grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.grailway.domain.authenticate.User'
+grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.grailway.domain.authenticate.UserRole'
+grails.plugins.springsecurity.authority.className = 'com.grailway.domain.authenticate.Role'
+
+grails.plugins.springsecurity.rememberMe.alwaysRemember = true
+
+grails.plugins.springsecurity.logout.afterLogoutUrl = '/logout/after'
+
+grails.plugins.springsecurity.securityConfigType = "InterceptUrlMap"
+grails.plugins.springsecurity.interceptUrlMap = [
+	'/*/singlepage/index':['IS_AUTHENTICATED_ANONYMOUSLY'],
+	'/*/singlepage/**':['ROLE_ADMIN','ROLE_FACEBOOK'],	
+	'/cgrailstemplate':['ROLE_ADMIN','ROLE_FACEBOOK'],
+	'/api/**':['ROLE_ADMIN','ROLE_FACEBOOK'],
+	
+ ]
+grails.plugins.springsecurity.facebook.domain.classname='com.grailway.domain.authenticate.FacebookUser'
+grails.plugins.springsecurity.facebook.appId='569095856437624'
+grails.plugins.springsecurity.facebook.secret='2370e6414826fdb25762fef99c8c2fb9'
+
+

@@ -4,8 +4,11 @@ class UrlMappings {
 	
 	static mappings = {
 		
+		"/login/$action?/$id?"(controller:"login")	
+		"/logout/$action?/$id?"(controller:"logout")
+		
 		//Index page mapping
-		"/$skin/"(controller:"main")		
+		"/$skin/"(controller:"singlepage")		
 		
 		"/$skin/$controller/$action?/$id?"{
 			constraints {

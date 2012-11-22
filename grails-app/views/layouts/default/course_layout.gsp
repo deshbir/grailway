@@ -10,6 +10,7 @@
 		<r:layoutResources/>	
 	</head>
 	<body dir="${direction}">
+		<g:include view="layout-helpers/facebook_init.gsp"/>
 		<g:include view="layout-helpers/header_main.gsp"/>			
 		<div id="main_container" class="container">
 			<g:layoutBody/>
