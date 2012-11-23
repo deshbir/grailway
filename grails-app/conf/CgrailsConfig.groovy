@@ -25,4 +25,5 @@ cgrails {
 		password = 'compro'
 	}
 	javascriptMVC = "backbone"	
+	cloudMode = false
 }
