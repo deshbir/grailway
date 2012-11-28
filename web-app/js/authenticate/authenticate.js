@@ -34,23 +34,6 @@ Authenticate = new function() {
 			$("#main_container").html(template);				
 	 	 },{cache:false});
   	},
-  	this.loginWithFacebook = function(){
-		FB.login(function(response) {
-		   if (response.authResponse) {
-			   TemplateManager.get('authenticate/home', function(template){
-					UserModel.get().fetch({
-						success: function(model, response){
-							var compiledTemplate = Mustache.render(template,UserModel.get().toJSON());
-							$("#main_container").html(compiledTemplate);
-						}
-					});						
-			 	});
-		   } else {
-			   $("#loginErrorMessage").show();
-			   $("#loginErrorMessage").html("<span class='errorMessage'>User cancelled login or did not fully authorize</span>");  
-		   }
-		 },{scope: 'email,user_likes'});		
-	} ,
 	this.logout = function(){
 		FB.getLoginStatus(function(response) {
 		  if (response.status === 'connected') {
