@@ -27,9 +27,7 @@
 					</button>                      
 				</form>				
 				<div class="facebook-login">				
-					<button class="btn btn-large" onclick='Authenticate.loginWithFacebook(); return false;'>
-						Login with Facebook
-					</button> 
+					<facebookAuth:connect/>
 				</div>	
 				<div id="loginErrorMessage"></div> 	
 			</sec:ifNotLoggedIn>				

@@ -4,5 +4,6 @@
 <g:set var="workflow" value="${CgrailsUtils.getWorkflow()}"/>
 
 <g:if test="${workflow != CgrailsConstants.WORKFLOW_OFFLINE}">
-	<facebookAuth:init/>						
+	<facebookAuth:init>
+	</facebookAuth:init>					
 </g:if>	

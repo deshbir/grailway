@@ -7,7 +7,8 @@ import com.compro.cgrails.CgrailsUtils
 class LogoutController {
 	
 	def after = {
-		// TODO put any pre-logout code here
-		redirect uri: "/" + CgrailsUtils.getSkin() + "/"
+		def referer = request.getHeader("Referer");
+		def refererArray = referer.split("/")
+		redirect uri: "/" + refererArray[4] + "/"
 	}
 }
