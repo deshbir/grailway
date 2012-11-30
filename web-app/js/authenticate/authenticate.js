@@ -54,12 +54,21 @@ Authenticate = new function() {
 	this.logout = function(){
 		FB.getLoginStatus(function(response) {
 		  if (response.status === 'connected') {
-			  FB.logout(function() {				 
-                  window.location.href = com.compro.cgrails.REQUEST_CONTEXT + "/j_spring_security_logout";
-              });
-		  } else {
-			  window.location.href = com.compro.cgrails.REQUEST_CONTEXT + "/j_spring_security_logout";
-		  }		  
+			  FB.logout();
+		  } 
 		});
+		ajaxLogout();		  
 	}
+	
+	function ajaxLogout() {
+		$.ajax({
+			url: com.compro.cgrails.REQUEST_CONTEXT + "/j_spring_security_logout",
+			type: 'GET',    	
+			success: function(response) {
+				window.location.href = com.compro.cgrails.REQUEST_CONTEXT 
+			}
+		});		    
+	}
+	
+	
 };
