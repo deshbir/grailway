@@ -47,6 +47,7 @@ grails.project.dependency.resolution = {
         runtime ":cached-resources:1.0"
         runtime ":yui-minify-resources:0.1.5"
 		runtime ":spring-security-core:1.2.7.3"		
+		runtime ":spring-security-facebook:0.9"
 
         build ":tomcat:$grailsVersion"
     }

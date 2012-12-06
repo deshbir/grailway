@@ -7,8 +7,6 @@ import com.compro.cgrails.CgrailsUtils
 class LogoutController {
 	
 	def after = {
-		def referer = request.getHeader("Referer");
-		def refererArray = referer.split("/")
-		redirect uri: "/" + refererArray[4] + "/"
+		render ""
 	}
 }

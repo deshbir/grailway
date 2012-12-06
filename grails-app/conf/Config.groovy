@@ -115,7 +115,5 @@ grails.plugins.springsecurity.interceptUrlMap = [
 	
  ]
 grails.plugins.springsecurity.facebook.domain.classname='com.grailway.domain.authenticate.FacebookUser'
-grails.plugins.springsecurity.facebook.appId='569095856437624'
-grails.plugins.springsecurity.facebook.secret='2370e6414826fdb25762fef99c8c2fb9'
-
-
+grails.plugins.springsecurity.facebook.appId='524978190847016'
+grails.plugins.springsecurity.facebook.secret='16fff8141bf4cc5e7afe78218c11648a'
